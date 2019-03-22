@@ -1,0 +1,107 @@
+@import '~@angular/material/theming';
+/*
+$mat-red
+$mat-pink
+$mat-purple
+$mat-deep-purple
+$mat-indigo
+$mat-blue
+$mat-light-blue
+$mat-cyan
+$mat-teal
+$mat-green
+$mat-light-green
+$mat-lime
+$mat-yellow
+$mat-amber
+$mat-orange
+$mat-deep-orange
+$mat-brown
+$mat-grey
+$mat-gray
+$mat-blue-grey
+*/
+
+$matEcom: (
+ 50: #eaecf2,
+ 100: #c9cfdf,
+ 200: #a6b0ca,
+ 300: #8290b5,
+  400: #6778a5,
+  500: #4c6095,
+  600: #45588d,
+  700: #3c4e82,
+  800: #334478,
+  900: #243367,
+  A100: #a9bcff,
+  A200: #7694ff,
+  A400: #436cff,
+  A700: #2a58ff,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $light-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $dark-primary-text,
+    A400: $dark-primary-text,
+    A700: $dark-primary-text,
+  )
+);
+
+$matEcomSec: (
+ 50: #e4f7f3,
+  100: #baebe1,
+  200: #8ddece,
+  300: #5fd0ba,
+  400: #3cc6ab,
+  500: #1abc9c,
+  600: #17b694,
+  700: #13ad8a,
+  800: #0fa580,
+  900: #08976e,
+  A100: #c3ffec,
+  A200: #90ffdc,
+  A400: #5dffcc,
+  A700: #44ffc4,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $light-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $dark-primary-text,
+    A400: $dark-primary-text,
+    A700: $dark-primary-text,
+  )
+);
+
+$primary: $matEcom;
+$secondary: $matEcomSec;
+$accent: $matEcomSec;
+
+$primary-color: map-get($primary, 500);
+$secondary-color: map-get($secondary, 500);
+
+$primary-text-color: white;
+$accent-color: map-get($accent, 500);
+$normal-color:  rgb(41,115,162);
+$warning-color: rgb(228, 6, 19);
+$grey-color:    rgb(102,102,102);
+
+$xs: "screen and (max-width : 300px)";
+$s: "screen and (max-width : 600px)";
+$m: "screen and (max-width : 992px)";
+$l: "screen and (max-width : 1200px)";

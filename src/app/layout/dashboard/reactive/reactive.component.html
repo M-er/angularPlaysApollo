@@ -1,0 +1,28 @@
+<div class="container-fluid">
+  <mat-card>
+    <div class="row">
+      <form #formulario="ngForm" [formGroup]="form" (ngSubmit)="onSubmit($event)">
+        <mat-form-field class="col s12 center">
+          <input matInput placeholder="Nombre" formControlName="nombre">
+        </mat-form-field>
+        <tr-fecha nombre="fecha" [form]="form" clase="col s12 center"></tr-fecha>
+        <div class="col s12">
+          <mat-checkbox formControlName="check">Check me!</mat-checkbox>
+        </div>
+        <tr-autocomplete placeholder="Autocomplete" [form]="form" clase="col s12 center" [(modelo)]="form" nombre="autocomplete"
+          idNombre="value" [resultados]="resultados"></tr-autocomplete>
+        <div class="col s2 offset-s4 center">
+          <button type="submit" mat-raised-button>Enviar</button>
+        </div>
+        <div class="col s2 center">
+          <button type="button" (click)="reset()" mat-raised-button>Reiniciar</button>
+        </div>
+      </form>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        {{ form.value | json }}
+      </div>
+    </div>
+  </mat-card>
+</div>
